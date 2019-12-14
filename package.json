@@ -1,0 +1,16 @@
+{
+  "name": "lolbaseball",
+  "version": "1.0.0",
+  "description": "another weak attempt at this dumbass baseball scorecard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Steve Kaser",
+  "license": "MIT",
+  "dependencies": {
+    "camo": "^0.12.3",
+    "express": "^4.17.1",
+    "nedb": "^1.8.0"
+  }
+}

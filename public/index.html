@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>lolbaseball</title>
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Anton|Encode+Sans+Expanded|Fredoka+One|Luckiest+Guy|Noto+Sans|Oswald|Poppins|Roboto+Mono|Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="scorebug">
+    <div id="players">
+      <div class="player pitcher">
+        <span class="player-name pitcher-name"></span>
+        <span class="pitches"></span>
+      </div>
+      <div class="player batter">
+        <span class="player-name batter-name"></span>
+        <span class="batting-avg"></span>
+      </div>
+    </div>
+    <div id="teams-bases">
+      <div class="teams">
+        <div class="team away-team">
+          <span class="away-team-name"></span>
+          <span class="away-team-score"></span>
+        </div>
+        <div class="team home-team">
+          <span class="home-team-name"></span>
+          <span class="home-team-score"></span>
+        </div>
+      </div>
+      <div class="bases">
+        <span class="base first-base"></span>
+        <span class="base second-base"></span>
+        <span class="base third-base"></span>
+      </div>
+    </div>
+    <div id="inning-outs-count">
+      <div class="inning">
+        <span class="inning-arrow"></span>
+        <span class="inning-number"></span>
+      </div>
+      <div class="outs">
+        <span class="number-of-outs"></span>
+      </div>
+      <div class="count">
+        <span class="strike-count"></span>
+      </div>
+    </div>
+  </div>
+  <div id="pitch-log">
+    <div class="btn lg-btn log-pitch">
+      <span>Log Pitch</span>
+    </div>
+    <!-- <div class="log hide"> -->
+    <div class="log"></div>
+      <div class="pitch-result">
+        <div class="row top-row">
+          <span class="btn row-option strike">Strike</span>
+          <span class="btn row-option ball">Ball</span>
+          <span class="btn row-option foul">Foul</span>
+          <span class="btn row-option hbp">HBP</span>
+          <span class="btn row-option balk">Balk</span>
+        </div>
+      </div>
+      <div class="ball-in-play">
+        <div class="btn lg-btn show-in-play">
+          <span>Ball In Play</span>
+        </div>
+        <div class="row top-row">
+          <span class="btn row-option single">Single</span>
+          <span class="btn row-option double">Double</span>
+          <span class="btn row-option triple">Triple</span>
+          <span class="btn row-option hr">Home Run</span>
+        </div>
+        <div class="row bottom-row">
+          <span class="btn row-option fly-out">Fly Out</span>
+        </div>
+        <div id="in-play-canvas" class=""></div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+  <script src="field/Quad.js"></script>
+  <script src="field/Diamond.js"></script>
+  <script src="field/Dirt.js"></script>
+  <script src="field/PitchingMound.js"></script>
+  <script src="field/Triangle.js"></script>
+  <script src="field/FoulLine.js"></script>
+  <script src="field/Fielder.js"></script>
+  <script src="field/Batter.js"></script>
+  <script src="field/Baseball.js"></script>
+  <script src="field/sketch.js"></script>
+  <script src="Game.js"></script>
+  <script src="GameState.js"></script>
+  <script src="PA.js"></script>
+  <script src="Player.js"></script>
+  <script src="playersAndElts.js"></script>
+  <script src="Team.js"></script>
+  <script src="ScoreBug.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
